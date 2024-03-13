@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 30%;
+    background-color: #252D33;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D8CB8;
+    gap: 20px;
+}
+.dob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.dob input{
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+    color: #252D33;
+}
+.dob button{
+    padding: 8px;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    background: #252D33;
+    font-size: 15px;
+    border-radius: 8px;
+}
