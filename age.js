@@ -9,5 +9,13 @@ btn.addEventListener('click', (e)=>{
     let dateOfBirth = new Date(enteredDate);
     let getYear = dateOfBirth.getFullYear();
     let age = currentYear - getYear;
-    display.textContent = `Your age is ${age} years old`
+    if(enteredDate === ''){
+        display.textContent = "please enter your date of birth"
+    }
+    else if (getYear < 1900 || getYear > currentYear) {
+        display.textContent = "Please enter a valid year of birth";
+    }
+    else{
+        display.textContent = `Your age is ${age} years old`
+    }
 })
